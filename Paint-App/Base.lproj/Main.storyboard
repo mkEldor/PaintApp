@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tTW-4z-ePi">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="k2x-KM-kk5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="tTW-4z-ePi" customClass="ViewController" customModule="NiceTry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oI5-aN-qrH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61J-Fi-lJH" customClass="MainView" customModule="NiceTry" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="768" height="924"/>
+                                <color key="backgroundColor" red="1" green="0.97676036980000003" blue="0.90446814509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETn-Hg-naL">
+                                <rect key="frame" x="456" y="37" width="30" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-iw-InN">
+                                <rect key="frame" x="693" y="37" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="undo"/>
+                                <connections>
+                                    <action selector="undoPressed:" destination="tTW-4z-ePi" eventType="touchUpInside" id="5rV-Ll-wlU"/>
+                                    <outletCollection property="gestureRecognizers" destination="11D-cv-bCZ" appends="YES" id="qgK-Qj-3mE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1c-TK-6cO">
+                                <rect key="frame" x="317" y="37" width="65" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4C-7X-0R9">
+                                <rect key="frame" x="390" y="49" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchFill:" destination="tTW-4z-ePi" eventType="valueChanged" id="jUp-vI-exZ"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orx-ry-rKt" customClass="ColorPicker" customModule="NiceTry" customModuleProvider="target">
+                                <rect key="frame" x="505" y="37" width="180" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kK6-Tp-Ic3">
+                                <rect key="frame" x="20" y="37" width="289" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="61J-Fi-lJH" firstAttribute="leading" secondItem="oI5-aN-qrH" secondAttribute="leading" id="CI4-FD-Wwp"/>
+                            <constraint firstItem="61J-Fi-lJH" firstAttribute="bottom" secondItem="Zpt-Up-zfH" secondAttribute="bottom" id="JZI-8J-YIS"/>
+                            <constraint firstItem="61J-Fi-lJH" firstAttribute="top" secondItem="Zpt-Up-zfH" secondAttribute="top" constant="80" id="l93-yv-nUa"/>
+                            <constraint firstAttribute="trailing" secondItem="61J-Fi-lJH" secondAttribute="trailing" id="ze1-sM-h9N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zpt-Up-zfH"/>
                     </view>
+                    <connections>
+                        <outlet property="currentColor" destination="ETn-Hg-naL" id="S3t-PJ-OYv"/>
+                        <outlet property="fillSwitch" destination="R4C-7X-0R9" id="eJH-tg-5sb"/>
+                        <outlet property="mainView" destination="61J-Fi-lJH" id="64h-yK-dup"/>
+                        <outlet property="pickerView" destination="orx-ry-rKt" id="gpm-eG-CXt"/>
+                        <outlet property="shapesView" destination="kK6-Tp-Ic3" id="rrD-6g-g3L"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAm-Hq-m6F" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="11D-cv-bCZ">
+                    <connections>
+                        <action selector="longUndoPressed:" destination="tTW-4z-ePi" id="1z1-Dv-o5R"/>
+                        <outlet property="delegate" destination="tTW-4z-ePi" id="yDP-tv-XwF"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="33.59375" y="39.84375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="undo" width="128" height="128"/>
+    </resources>
 </document>

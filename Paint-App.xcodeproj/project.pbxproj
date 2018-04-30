@@ -14,6 +14,9 @@
 		7F4F234A20973EE1004DBAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4F234820973EE1004DBAE9 /* LaunchScreen.storyboard */; };
 		7F4F235520973EE1004DBAE9 /* Paint_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F235420973EE1004DBAE9 /* Paint_AppTests.swift */; };
 		7F4F236020973EE2004DBAE9 /* Paint_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F235F20973EE2004DBAE9 /* Paint_AppUITests.swift */; };
+		7F4F236E20974066004DBAE9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F236D20974066004DBAE9 /* MainView.swift */; };
+		7F4F23702097408B004DBAE9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F236F2097408B004DBAE9 /* Models.swift */; };
+		7F4F2372209740A9004DBAE9 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F2371209740A9004DBAE9 /* ColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7F4F235B20973EE2004DBAE9 /* Paint-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paint-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4F235F20973EE2004DBAE9 /* Paint_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint_AppUITests.swift; sourceTree = "<group>"; };
 		7F4F236120973EE2004DBAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4F236D20974066004DBAE9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7F4F236F2097408B004DBAE9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7F4F2371209740A9004DBAE9 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				7F4F234620973EE1004DBAE9 /* Assets.xcassets */,
 				7F4F234820973EE1004DBAE9 /* LaunchScreen.storyboard */,
 				7F4F234B20973EE1004DBAE9 /* Info.plist */,
+				7F4F236D20974066004DBAE9 /* MainView.swift */,
+				7F4F236F2097408B004DBAE9 /* Models.swift */,
+				7F4F2371209740A9004DBAE9 /* ColorPicker.swift */,
 			);
 			path = "Paint-App";
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4F234220973EE1004DBAE9 /* ViewController.swift in Sources */,
+				7F4F236E20974066004DBAE9 /* MainView.swift in Sources */,
+				7F4F2372209740A9004DBAE9 /* ColorPicker.swift in Sources */,
 				7F4F234020973EE1004DBAE9 /* AppDelegate.swift in Sources */,
+				7F4F23702097408B004DBAE9 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
